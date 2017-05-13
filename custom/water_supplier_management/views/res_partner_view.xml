@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="partner_water_meter_action" model="ir.actions.act_window">
+            <field name="name">Water Meter</field>
+            <field name="res_model">device.water.meter</field>
+            <field name="view_id" ref="water_supplier_management.water_meter_view_tree"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('holder_partner', '=', active_id)]</field>
+            <field name="context">{'search_default_partner': active_id, 'default_partner': active_id}</field>
+        </record>
+
+        <record id="partner_water_meter_button_view" model="ir.ui.view">
+            <field name="name">base.partner.form.inh</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <field name="website" position="after">
+                    <field name="device_water_meters" invisible="1"/>
+                </field>
+                <div name="buttons" position="inside">
+                    <button class="oe_stat_button" type="action"
+                            name="%(water_supplier_management.partner_water_meter_action)d"
+                            icon="fa-gear">
+                        <div><strong><field name="water_meters_count"/></strong><br/>Water Meters</div>
+                    </button>
+                </div>
+            </field>
+        </record>
+    </data>
+</openerp>

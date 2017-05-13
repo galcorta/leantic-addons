@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- States -->
+        <record model="res.country.state" id="l10n_py_toponyms_state_asuncion">
+            <field name="code">ASU</field>
+            <field name="name">Asunción</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_concepcion">
+            <field name="code">001</field>
+            <field name="name">Concepción</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_san_pedro">
+            <field name="code">002</field>
+            <field name="name">San Pedro</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_cordillera">
+            <field name="code">003</field>
+            <field name="name">Cordillera</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_guaira">
+            <field name="code">004</field>
+            <field name="name">Guairá</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_caaguazu">
+            <field name="code">005</field>
+            <field name="name">Caaguazú</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_caazapa">
+            <field name="code">006</field>
+            <field name="name">Caazapá</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_itapua">
+            <field name="code">007</field>
+            <field name="name">Itapúa</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_misiones">
+            <field name="code">008</field>
+            <field name="name">Misiones</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_paraguari">
+            <field name="code">009</field>
+            <field name="name">Paraguarí</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_alto_parana">
+            <field name="code">010</field>
+            <field name="name">Alto Paraná</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_central">
+            <field name="code">011</field>
+            <field name="name">Central</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_neembucu">
+            <field name="code">012</field>
+            <field name="name">Ñeembucú</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_amambay">
+            <field name="code">013</field>
+            <field name="name">Amambay</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_canindeyu">
+            <field name="code">014</field>
+            <field name="name">Canindeyú</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_presidente_hayes">
+            <field name="code">015</field>
+            <field name="name">Presidente Hayes</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_boqueron">
+            <field name="code">016</field>
+            <field name="name">Boquerón</field>
+            <field name="country_id">187</field>
+        </record>
+        <record model="res.country.state" id="l10n_py_toponyms_state_alto_paraguay">
+            <field name="code">017</field>
+            <field name="name">Alto Paraguay</field>
+            <field name="country_id">187</field>
+        </record>
+
+
+        <!-- Cities -->
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_asuncion">
+            <field name="name">Asunción</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_asuncion"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_cde">
+            <field name="name">Ciudad del Este</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_alto_parana"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_luque">
+            <field name="name">Luque</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_san_lorenzo">
+            <field name="name">San Lorenzo</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_capiata">
+            <field name="name">Capiatá</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_lambare">
+            <field name="name">Lambaré</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_fndo_de_la_mora">
+            <field name="name">Fernando de la Mora</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_nemby">
+            <field name="name">Ñemby</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <!--<record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>
+        <record model="res.country.state.city" id="l10n_py_toponyms_city_limpio">
+            <field name="name">Limpio</field>
+            <field name="state_id" ref="l10n_py_toponyms_state_central"/>
+        </record>-->
+    </data>
+</odoo>

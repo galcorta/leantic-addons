@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+        <!-- Account Tags -->
+
+    <record id="tag_py_01" model="account.account.tag">
+        <field name="name">Base Imponible</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_02" model="account.account.tag">
+        <field name="name">Base Imponible - Ventas</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_03" model="account.account.tag">
+        <field name="name">Ventas Gravadas con IVA</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_04" model="account.account.tag">
+        <field name="name">Ventas NO Gravadas (Exoneradas)</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_05" model="account.account.tag">
+        <field name="name">Ventas Gravadas Fuera de Ámbito</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_06" model="account.account.tag">
+        <field name="name">Base Imponible - Compras</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_07" model="account.account.tag">
+        <field name="name">Compras Gravadas con IVA</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_08" model="account.account.tag">
+        <field name="name">Compras NO Gravadas (Exoneradas)</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_09" model="account.account.tag">
+        <field name="name">Compras Gravadas Fuera de Ámbito</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_10" model="account.account.tag">
+        <field name="name">Impuesto al Valor Agregado (IVA) Total a Pagar</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_11" model="account.account.tag">
+        <field name="name">Impuesto Pagado</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_12" model="account.account.tag">
+        <field name="name">Impuesto Pagado IVA</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_13" model="account.account.tag">
+        <field name="name">Impuesto Pagado de Exonerados al IVA</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_14" model="account.account.tag">
+        <field name="name">Impuesto Pagado Fuera de Ámbito</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_15" model="account.account.tag">
+        <field name="name">Impuesto Cobrado</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_16" model="account.account.tag">
+        <field name="name">Impuesto Cobrado IVA</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_17" model="account.account.tag">
+        <field name="name">Impuesto Cobrado de Exonerados al IVA</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_18" model="account.account.tag">
+        <field name="name">Impuesto Cobrado Fuera de Ámbito</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_19" model="account.account.tag">
+        <field name="name">Impuesto Nacionales a Pagar</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="tag_py_20" model="account.account.tag">
+        <field name="name">Impuesto a las Ganancias a Pagar</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="ITAX_10" model="account.tax.template">
+      <field name="chart_template_id" ref="py_chart_template"/>
+      <field name="name">IVA 10% Venta</field>
+      <field name="description">ITAX_10-OUT</field>
+      <field name="amount">10</field>
+      <field name="amount_type">percent</field>
+      <field name="type_tax_use">sale</field>
+      <field name="refund_account_id" ref="231"/>
+      <field name="account_id" ref="231"/>
+      <field name="tag_ids" eval="[(6,0,[ref('tag_py_03'), ref('tag_py_16')])]"/>
+    </record>
+
+    <record id="OTAX_10" model="account.tax.template">
+      <field name="chart_template_id" ref="py_chart_template"/>
+      <field name="name">IVA 10% Compra</field>
+      <field name="description">OTAX_10-IN</field>
+      <field name="amount">10</field>
+      <field name="amount_type">percent</field>
+      <field name="type_tax_use">purchase</field>
+      <field name="refund_account_id" ref="231"/>
+      <field name="account_id" ref="231"/>
+      <field name="tag_ids" eval="[(6,0,[ref('tag_py_07'), ref('tag_py_12')])]"/>
+    </record>
+
+    <record id="ITAX_05" model="account.tax.template">
+      <field name="chart_template_id" ref="py_chart_template"/>
+      <field name="name">IVA 5% Venta</field>
+      <field name="description">ITAX_5-OUT</field>
+      <field name="amount">5</field>
+      <field name="amount_type">percent</field>
+      <field name="type_tax_use">sale</field>
+      <field name="refund_account_id" ref="231"/>
+      <field name="account_id" ref="231"/>
+      <field name="tag_ids" eval="[(6,0,[ref('tag_py_16'), ref('tag_py_03')])]"/>
+    </record>
+
+    <record id="OTAX_05" model="account.tax.template">
+      <field name="chart_template_id" ref="py_chart_template"/>
+      <field name="name">IVA 5% Compra</field>
+      <field name="description">OTAX_5-IN</field>
+      <field name="amount">5</field>
+      <field name="amount_type">percent</field>
+      <field name="type_tax_use">purchase</field>
+      <field name="refund_account_id" ref="231"/>
+      <field name="account_id" ref="231"/>
+      <field name="tag_ids" eval="[(6,0,[ref('tag_py_12'), ref('tag_py_07')])]"/>
+    </record>
+
+  </data>
+</odoo>

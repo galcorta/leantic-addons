@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+    <record model="ir.ui.view" id="res_partner_view_form">
+      <field name="name">res.partner.view.form</field>
+      <field name="model">res.partner</field>
+      <field name='inherit_id' ref='base.view_partner_form'/>
+      <field name='arch' type='xml'>
+        <label for="vat" position="replace" />
+        <xpath expr="//field[@name='vat']" position="replace" />
+        <button colspan="2" name="button_check_vat" string="Check Validity" type="object" icon="gtk-execute" class="oe_inline" position="replace" />
+        <field name="vat_subjected" class="oe_inline" position="replace" />
+        <field name="parent_id" position="before">
+            <label for="business_name" string="Razón social" class="oe_edit_only"/>
+            <field name="business_name" placeholder="Razón social.." />
+            <label for="vat" string="RUC" class="oe_edit_only" />
+            <field name="vat" on_change="vat_change(vat)" placeholder="e.g. BE0477472701" required="True"/>
+            <button colspan="2" name="button_check_vat" string="Check Validity" type="object" icon="gtk-execute" class="oe_inline oe_edit_only"/>
+            <field name="vat_subjected" class="oe_inline oe_edit_only"/>
+        </field>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="res_partner_view_form_fiscal_stamps">
+          <field name="name">res.partner.view.form.fiscal.stamps</field>
+          <field name="model">res.partner</field>
+          <field name='inherit_id' ref='base.view_partner_form'/>
+          <field name='arch' type='xml'>
+                <xpath expr="//page[@string='Accounting']/group" position="after">
+                    <group string="Fiscal stamps">
+                        <field name="fiscal_stamp_ids" nolabel="1"/>
+                    </group>
+                </xpath>
+          </field>
+    </record>
+
+  </data>
+</openerp>

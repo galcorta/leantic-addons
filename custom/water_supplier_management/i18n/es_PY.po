@@ -1,0 +1,218 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* water_supplier_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-17 00:49+0000\n"
+"PO-Revision-Date: 2017-01-17 00:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Additional Details"
+msgstr "Detalles adicionales"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Analysis Information"
+msgstr "Informaci'on de analisis"
+
+#. module: water_supplier_management
+#: field:device.water.meter,company:0
+msgid "Company"
+msgstr "Compañia"
+
+#. module: water_supplier_management
+#: model:ir.ui.menu,name:water_supplier_management.menu_water_meter_config
+msgid "Configuration"
+msgstr "Configuracion"
+
+#. module: water_supplier_management
+#: field:device.water.meter,create_uid:0
+#: field:device.water.meter.read,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: water_supplier_management
+#: field:device.water.meter,create_date:0
+#: field:device.water.meter.read,create_date:0
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Current Details"
+msgstr "Detalles actuales"
+
+#. module: water_supplier_management
+#: field:device.water.meter.read,date_created:0
+msgid "Date created"
+msgstr "Creado el"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Device Water Meter Details"
+msgstr "Detalles del medidor"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Extra Information"
+msgstr "Informacion Extra"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_search
+msgid "Holder Customer"
+msgstr "Cliente poseedor"
+
+#. module: water_supplier_management
+#: field:device.water.meter,holder_partner:0
+msgid "Holder partner"
+msgstr "Poseedor"
+
+#. module: water_supplier_management
+#: model:ir.model,name:water_supplier_management.model_device_water_meter
+msgid "Holds records of devices water meters"
+msgstr "Mantiene un registro de las mediciones del medidor"
+
+#. module: water_supplier_management
+#: field:device.water.meter,id:0
+#: field:device.water.meter.read,id:0
+msgid "ID"
+msgstr ""
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Insurance"
+msgstr ""
+
+#. module: water_supplier_management
+#: field:device.water.meter,write_uid:0
+#: field:device.water.meter.read,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: water_supplier_management
+#: field:device.water.meter,write_date:0
+#: field:device.water.meter.read,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: water_supplier_management
+#: field:device.water.meter,meter_value:0
+#: field:device.water.meter.read,meter_value:0
+msgid "Meter Value"
+msgstr "Valor"
+
+#. module: water_supplier_management
+#: field:device.water.meter,name:0
+msgid "Meter name"
+msgstr "Nombre"
+
+#. module: water_supplier_management
+#: field:device.water.meter,model:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: water_supplier_management
+#: model:ir.model,name:water_supplier_management.model_res_partner
+msgid "Partner"
+msgstr "Socio"
+
+#. module: water_supplier_management
+#: field:device.water.meter.read,date_read:0
+msgid "Read date"
+msgstr "Fecha de lectura"
+
+#. module: water_supplier_management
+#: model:ir.model,name:water_supplier_management.model_device_water_meter_read
+msgid "Records of meter readings"
+msgstr "Registros del medidor"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_search
+msgid "Search water meter"
+msgstr "Buscar medidor"
+
+#. module: water_supplier_management
+#: help:device.water.meter.read,device_water_meter_id:0
+msgid "This is the water meter related"
+msgstr "Este es el medidor relacionado"
+
+#. module: water_supplier_management
+#: help:device.water.meter,holder_partner:0
+msgid "This partner holds the device water meter"
+msgstr "Este es el cliente que posee el medidor"
+
+#. module: water_supplier_management
+#: model:ir.actions.act_window,name:water_supplier_management.partner_water_meter_action
+msgid "Water Meter"
+msgstr "Medidor"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+msgid "Water Meter Details"
+msgstr "Detalles del medidor"
+
+#. module: water_supplier_management
+#: model:ir.ui.menu,name:water_supplier_management.menu_water_meter_manager
+msgid "Water Meter Manager"
+msgstr "Medidores"
+
+#. module: water_supplier_management
+#: view:device.water.meter:water_supplier_management.water_meter_view_form
+#: view:device.water.meter:water_supplier_management.water_meter_view_tree
+#: model:ir.actions.act_window,name:water_supplier_management.water_meter_form_action
+#: model:ir.ui.menu,name:water_supplier_management.menu_water_meters
+#: view:res.partner:water_supplier_management.partner_water_meter_button_view
+#: field:res.partner,device_water_meters:0
+msgid "Water Meters"
+msgstr "Medidores"
+
+#. module: water_supplier_management
+#: model:ir.actions.act_window,name:water_supplier_management.water_meter_read_form_action
+msgid "Water Meters readings"
+msgstr "Lecturas de medidores"
+
+#. module: water_supplier_management
+#: field:device.water.meter.read,device_water_meter_id:0
+msgid "Water meter"
+msgstr "Medidor"
+
+#. module: water_supplier_management
+#: view:device.water.meter.read:water_supplier_management.water_meter_read_view_form
+msgid "Water meter read"
+msgstr "Lectura de medidor"
+
+#. module: water_supplier_management
+#: view:device.water.meter.read:water_supplier_management.water_meter_read_view_tree
+msgid "Water meter readings"
+msgstr "Lecturas de medidor"
+
+#. module: water_supplier_management
+#: field:device.water.meter,device_water_meters_reads:0
+msgid "Water meter reads"
+msgstr "Lecturas de medidor"
+
+#. module: water_supplier_management
+#: model:ir.ui.menu,name:water_supplier_management.menu_water_meters_read
+msgid "Water meters readings"
+msgstr "Lecturas de medidor"
+
+#. module: water_supplier_management
+#: field:device.water.meter,year:0
+msgid "Year"
+msgstr "Año"
+

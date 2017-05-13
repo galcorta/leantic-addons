@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Parent Menu on Right Panes -->
+        <menuitem id="menu_water_meter_manager" name="Water Meter Manager"
+                  sequence="86"/>
+
+        <menuitem id="menu_water_meter_config" name="Configuration"
+            parent="menu_water_meter_manager" sequence="2" />
+
+        <!-- ========================== Water Meters ========================== -->
+        <record id="water_meter_view_form" model="ir.ui.view">
+            <field name="name">water.meter.form</field>
+            <field name="model">device.water.meter</field>
+            <field name="arch" type="xml">
+                <form string="Water Meters">
+                    <group colspan="4" col="6">
+                        <separator string="Water Meter Details"
+                            colspan="6" />
+                        <newline />
+                        <field name="name" />
+                        <field name="company" invisible="1"/>
+                        <field name="holder_partner" />
+                        <field name="meter_value" />
+                    </group>
+                    <separator string="Analysis Information"
+                        colspan="4" />
+                    <notebook colspan="4">
+                        <page string="Additional Details">
+                           <group>
+                                <group>
+                                    <separator string="Current Details"
+                                        colspan="4" />
+                                </group>
+                                <group>
+                                    <separator string="Device Water Meter Details"
+                                    colspan="4" />
+                                    <field name="year" />
+                                    <field name="model" />
+                                </group>
+                                <group>
+                                    <separator string="Extra Information"
+                                        colspan="4" />
+                                </group>
+                                <group>
+                                    <separator string="Insurance"
+                                        colspan="4" />
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="water_meter_view_tree" model="ir.ui.view">
+            <field name="name">water.meter.tree</field>
+            <field name="model">device.water.meter</field>
+            <field name="arch" type="xml">
+                <tree string="Water Meters">
+                    <field name="name" />
+                    <field name="holder_partner" />
+                    <field name="year" />
+                    <field name="model"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="water_meter_search" model="ir.ui.view">
+            <field name="name">water_meter.search</field>
+            <field name="model">device.water.meter</field>
+            <field name="arch" type="xml">
+                <search string="Search water meter">
+                   <field name="holder_partner"/>
+                   <field name="model"/>
+                   <group expand="0" string="Group By">
+                       <filter string="Holder Customer" context="{'group_by' : 'holder_partner'}"/>
+                   </group>
+               </search>
+            </field>
+        </record>
+
+        <record id="water_meter_form_action" model="ir.actions.act_window">
+            <field name="name">Water Meters</field>
+            <field name="res_model">device.water.meter</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_water_meters" name="Water Meters"
+            parent="menu_water_meter_config" action="water_meter_form_action"
+            sequence="1" />
+
+        <!-- ========================== Water Meters Readings ========================== -->
+
+        <record id="water_meter_read_view_form" model="ir.ui.view">
+            <field name="name">water.meter.read.form</field>
+            <field name="model">device.water.meter.read</field>
+            <field name="arch" type="xml">
+                <form string="Water meter read">
+                    <group>
+                        <field name="device_water_meter_id" />
+                        <field name="date_read" />
+                        <field name="meter_value" />
+                        <field name="date_created" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="water_meter_read_view_tree" model="ir.ui.view">
+            <field name="name">water.meter.read.tree</field>
+            <field name="model">device.water.meter.read</field>
+            <field name="arch" type="xml">
+                <tree string="Water meter readings">
+                    <field name="device_water_meter_id" />
+                    <field name="date_read" />
+                    <field name="meter_value" />
+                    <field name="date_created"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="water_meter_read_form_action" model="ir.actions.act_window">
+            <field name="name">Water Meters readings</field>
+            <field name="res_model">device.water.meter.read</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_water_meters_read" name="Water meters readings"
+            parent="menu_water_meter_config" action="water_meter_read_form_action"
+            sequence="2" />
+    </data>
+</openerp>

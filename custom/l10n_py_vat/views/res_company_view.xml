@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!--<record model="ir.ui.view" id="l10n_py_res_company_view_form">
+            <field name="name">res.company.view.form.fiscal.stamps</field>
+            <field name="model">res.company</field>
+            <field name='inherit_id' ref='base.view_company_form'/>
+            <field name='arch' type='xml'>
+                <xpath expr="//div[@class='oe_title']" position="replace">
+                </xpath>
+                <field name="vat" position="replace"/>
+
+                <xpath expr="//div[@class='oe_view_nocontent oe_clear']" position="before">
+                    <div class="oe_title oe_left">
+                        <div class="oe_edit_only">
+                            <label for="name" class="oe_edit_only"/>
+                        </div>
+                        <h1>
+                            <field name="name" class="oe_inline"/>
+                        </h1>
+
+                        <label for="business_name" string="Razón social" class="oe_edit_only"/>
+                        <field name="business_name" placeholder="Razón social.." required="True"/>
+                        <label for="vat" string="RUC" class="oe_edit_only" />
+                        <field name="vat" on_change="vat_change(vat)" placeholder="e.g. BE0477472701" />
+                        <button colspan="2" name="button_check_vat" string="Check Validity" type="object" icon="gtk-execute" class="oe_inline oe_edit_only"/>
+                        &lt;!&ndash;<field name="vat_subjected" class="oe_inline oe_edit_only"/>&ndash;&gt;
+                    </div>
+                </xpath>
+            </field>
+        </record>-->
+    </data>
+</odoo>

@@ -1,0 +1,1 @@
+from . import device_water_meter, res_partner

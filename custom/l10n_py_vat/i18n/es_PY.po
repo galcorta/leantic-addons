@@ -1,0 +1,194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_py_leantic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-30 00:44+0000\n"
+"PO-Revision-Date: 2017-01-29 22:04-0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_PY\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. module: l10n_py_leantic
+#: view:account.dispatch.point:l10n_py_leantic.account_dispatch_point_view_form
+msgid "Accounting info"
+msgstr "Información Contable"
+
+#. module: l10n_py_leantic
+#: field:res.partner,business_name:0
+msgid "Business name"
+msgstr "Razon social"
+
+#. module: l10n_py_leantic
+#: view:res.partner:l10n_py_leantic.res_partner_view_form
+msgid "Check Validity"
+msgstr "Verificar validez"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,company_id:0
+msgid "Company"
+msgstr "Compañia"
+
+#. module: l10n_py_leantic
+#: view:account.dispatch.point:l10n_py_leantic.account_dispatch_point_view_form
+msgid "Company..."
+msgstr "Compañia..."
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,create_uid:0
+#: field:account.fiscal.stamp,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,create_date:0
+#: field:account.fiscal.stamp,create_date:0
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_py_leantic
+#: view:account.dispatch.point:l10n_py_leantic.account_dispatch_point_view_form
+msgid "Dispatch point"
+msgstr "Punto de expedición"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,sequence:0
+msgid "Invoice Sequence"
+msgstr "Secuencia de factura"
+
+#. module: l10n_py_leantic
+#: view:account.dispatch.point:l10n_py_leantic.account_dispatch_point_view_tree
+#: model:ir.ui.menu,name:l10n_py_leantic.account_dispatch_point_menu1
+#: model:ir.ui.menu,name:l10n_py_leantic.account_dispatch_point_menu2
+msgid "Dispatch points"
+msgstr "Punto de expedición"
+
+#. module: l10n_py_leantic
+#: field:account.fiscal.stamp,due_date:0
+msgid "Due date"
+msgstr "Fecha de vencimiento"
+
+#. module: l10n_py_leantic
+#: field:account.fiscal.stamp,number:0
+msgid "Fiscal Stamp"
+msgstr "Timbrado"
+
+#. module: l10n_py_leantic
+#: view:account.fiscal.stamp:l10n_py_leantic.account_fiscal_stamp_form
+msgid "Fiscal stamp"
+msgstr "Timbrado"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,fiscal_stamp_ids:0
+msgid "Fiscal stamp ids"
+msgstr "Timbrados"
+
+#. module: l10n_py_leantic
+#: view:account.fiscal.stamp:l10n_py_leantic.account_fiscal_stamp_view_tree
+msgid "Fiscal stamps"
+msgstr "Timbrado"
+
+#. module: l10n_py_leantic
+#: selection:account.dispatch.point,usage:0
+msgid "General"
+msgstr "General"
+
+#. module: l10n_py_leantic
+#: view:account.dispatch.point:l10n_py_leantic.account_dispatch_point_view_form
+msgid "General info"
+msgstr "Información General"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,id:0 field:account.fiscal.stamp,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,write_uid:0
+#: field:account.fiscal.stamp,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,write_date:0
+#: field:account.fiscal.stamp,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,legal_id:0
+msgid "Legal ID"
+msgstr "Código"
+
+#. module: l10n_py_leantic
+#: view:account.dispatch.point:l10n_py_leantic.account_dispatch_point_view_form
+msgid "Legal ID..."
+msgstr "Código..."
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_py_leantic
+#: model:ir.model,name:l10n_py_leantic.model_res_partner
+msgid "Partner"
+msgstr "Socio"
+
+#. module: l10n_py_leantic
+#: selection:account.dispatch.point,usage:0
+msgid "Point of Sales"
+msgstr "Puntos de venta"
+
+#. module: l10n_py_leantic
+#: view:res.partner:l10n_py_leantic.res_partner_view_form
+msgid "RUC"
+msgstr "RUC"
+
+#. module: l10n_py_leantic
+#: view:res.partner:l10n_py_leantic.res_partner_view_form
+msgid "Razón social"
+msgstr "Razón social"
+
+#. module: l10n_py_leantic
+#: view:res.partner:l10n_py_leantic.res_partner_view_form
+msgid "Razón social.."
+msgstr "Razón social.."
+
+#. module: l10n_py_leantic
+#: sql_constraint:account.dispatch.point:0
+msgid "The dispatch point legal ID must be unique per company!"
+msgstr "El código del punto de expedición debe ser unico por sucursal!"
+
+#. module: l10n_py_leantic
+#: sql_constraint:account.dispatch.point:0
+msgid "The dispatch point name must be unique per company!"
+msgstr "El nombre del punto de expedición debe ser unico por sucursal!"
+
+#. module: l10n_py_leantic
+#: help:account.dispatch.point,sequence:0
+msgid "This sequence is automatically created by Odoo but you can change it to customize the reference numbers of your dispatch points."
+msgstr "Esta secuencia es generada automaticamente por el Sistema, pero puede cambiar para personalizar el numero de referencia a su punto de expedición."
+
+#. module: l10n_py_leantic
+#: field:account.dispatch.point,usage:0
+msgid "Usage"
+msgstr "Uso"
+
+#. module: l10n_py_leantic
+#: model:ir.actions.act_window,name:l10n_py_leantic.account_dispatch_point_action
+msgid "Dispatch point"
+msgstr "Punto de expedición"
+
+#. module: l10n_py_leantic
+#: view:res.partner:l10n_py_leantic.res_partner_view_form
+msgid "e.g. BE0477472701"
+msgstr "Por ejemplo, ESA00000000"
