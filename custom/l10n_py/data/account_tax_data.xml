@@ -108,7 +108,8 @@
       <field name="name">IVA 10% Venta</field>
       <field name="description">ITAX_10-OUT</field>
       <field name="amount">10</field>
-      <field name="amount_type">percent</field>
+      <field name="amount_type">division</field>
+      <field name="price_include" eval="1"></field>
       <field name="type_tax_use">sale</field>
       <field name="refund_account_id" ref="231"/>
       <field name="account_id" ref="231"/>
@@ -120,7 +121,8 @@
       <field name="name">IVA 10% Compra</field>
       <field name="description">OTAX_10-IN</field>
       <field name="amount">10</field>
-      <field name="amount_type">percent</field>
+      <field name="amount_type">division</field>
+      <field name="price_include" eval="1"></field>
       <field name="type_tax_use">purchase</field>
       <field name="refund_account_id" ref="231"/>
       <field name="account_id" ref="231"/>
@@ -132,7 +134,8 @@
       <field name="name">IVA 5% Venta</field>
       <field name="description">ITAX_5-OUT</field>
       <field name="amount">5</field>
-      <field name="amount_type">percent</field>
+      <field name="amount_type">division</field>
+      <field name="price_include" eval="1"></field>
       <field name="type_tax_use">sale</field>
       <field name="refund_account_id" ref="231"/>
       <field name="account_id" ref="231"/>
@@ -144,7 +147,8 @@
       <field name="name">IVA 5% Compra</field>
       <field name="description">OTAX_5-IN</field>
       <field name="amount">5</field>
-      <field name="amount_type">percent</field>
+      <field name="amount_type">division</field>
+      <field name="price_include" eval="1"></field>
       <field name="type_tax_use">purchase</field>
       <field name="refund_account_id" ref="231"/>
       <field name="account_id" ref="231"/>
