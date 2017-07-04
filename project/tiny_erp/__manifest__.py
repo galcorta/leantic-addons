@@ -24,12 +24,13 @@
 
     # always loaded
     'data': [
-        'views/sale_views.xml',
+        'views/sale_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
     ],
     'installable': True,
+    'application': True,
     'auto_install': False,
 
 }
