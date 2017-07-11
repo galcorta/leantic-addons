@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
   <data>
-    <menuitem name="Dispatch points" id="account_dispatch_point_menu1"
+<!--    <menuitem name="Dispatch points" id="account_dispatch_point_menu1"
           parent="base.menu_administration"
           sequence="4"
-          groups="base.group_no_one"/>
+          groups="base.group_no_one"/>-->
 
     <record model="ir.ui.view" id="account_fiscal_stamp_form">
       <field name="name">account.fiscal.stamp.view.form</field>
@@ -85,6 +85,19 @@
       </field>
     </record>
 
+    <record model="ir.actions.act_window" id="account_fiscal_stamp_action">
+      <field name="name">Fiscal stamp</field>
+      <field name="res_model">account.fiscal.stamp</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+<!--    <menuitem name="Fiscal stamps" id="account_fiscal_stamp_menu"
+              parent="account.account_account_menu"
+              action="account_fiscal_stamp_action"
+              sequence="10"
+              groups="account.group_account_manager"/>-->
+
     <record model="ir.actions.act_window" id="account_dispatch_point_action">
       <field name="name">Dispatch point</field>
       <field name="res_model">account.dispatch.point</field>
@@ -92,11 +105,11 @@
       <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Dispatch points" id="account_dispatch_point_menu2"
-              parent="base.menu_res_company_global"
+    <menuitem name="Dispatch points" id="account_dispatch_point_menu"
+              parent="account.account_management_menu"
               action="account_dispatch_point_action"
-              sequence="18"
-              groups="base.group_no_one"/>
+              sequence="5"
+              groups="account.group_account_manager"/>
 
   </data>
-</openerp>
+</odoo>

@@ -36,7 +36,6 @@ Paraguayan localization customizations
     'depends': [
         'base',
         'account',
-        'base_vat',
     ],
     'data': [
         'views/res_partner_view.xml',
@@ -48,5 +47,6 @@ Paraguayan localization customizations
     'test': [
     ],
     'installable': True,
+    'application': True,
     'active': False,
 }

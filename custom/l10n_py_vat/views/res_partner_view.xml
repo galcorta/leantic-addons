@@ -7,10 +7,10 @@
             <field name='inherit_id' ref='base.view_partner_form'/>
             <field name='arch' type='xml'>
                 <xpath expr="//div[@class='o_row']" position="before">
-                    <label for="business_name" string="Razón social" class="oe_edit_only"/>
+                    <!--<label for="business_name" string="Razón social" class="oe_edit_only"/>
                     <h2>
                         <field name="business_name" placeholder="Razón social.." required="True"/>
-                    </h2>
+                    </h2>-->
                     <label for="vat" string="RUC" class="oe_edit_only" />
                     <h2>
                         <field name="vat" placeholder="e.g. PY44444401-7" />

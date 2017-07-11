@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from openerp import models, fields, api
+from odoo import models, fields, api
 
 
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    business_name = fields.Char('Business name')
+    fantasy_name = fields.Char('Fantasy name')
     fiscal_stamp_ids = fields.One2many('account.fiscal.stamp', 'partner_id', 'Fiscal stamps')
 

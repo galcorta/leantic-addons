@@ -19,7 +19,7 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
+from odoo import models, fields, api
 from openerp.exceptions import ValidationError
 
 
@@ -46,7 +46,8 @@ class FiscalStamp(models.Model):
     partner_id = fields.Many2one('res.partner', 'Partner',
                                  ondelete='cascade',
                                  required=True)
-
+    # company_id = fields.Many2one('res.company', 'Company', default=lambda self: self.env.user.company_id,
+    #                              ondelete='cascade')
 
 class DispatchPoint(models.Model):
     _name = 'account.dispatch.point'

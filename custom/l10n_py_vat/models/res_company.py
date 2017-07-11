@@ -25,4 +25,3 @@ from odoo import models, fields, api
 class ResCompany(models.Model):
     _inherit = 'res.company'
 
-    business_name = fields.Char(related='partner_id.business_name')
