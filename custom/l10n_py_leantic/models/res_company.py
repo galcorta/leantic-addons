@@ -25,7 +25,7 @@ from odoo import models, fields, api
 class ResCompany(models.Model):
     _inherit = 'res.company'
 
-    fantasy_name = fields.Char(related='partner_id.fantasy_name')
+    bussines_name = fields.Char(related='partner_id.bussines_name')
 
     fiscal_stamp_ids = fields.One2many('account.fiscal.stamp',
                                        string='Fiscal stamps',
