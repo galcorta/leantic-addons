@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="res_partner_view_form">
-            <field name="name">res.partner.view.form</field>
-            <field name="model">res.partner</field>
-            <field name='inherit_id' ref='base.view_partner_form'/>
-            <field name='arch' type='xml'>
-                <xpath expr="//div[@class='o_row']" position="before">
-                    <!--<label for="business_name" string="Razón social" class="oe_edit_only"/>
-                    <h2>
-                        <field name="business_name" placeholder="Razón social.." required="True"/>
-                    </h2>-->
-                    <label for="vat" string="RUC" class="oe_edit_only" />
-                    <h2>
-                        <field name="vat" placeholder="e.g. PY44444401-7" />
-                    </h2>
-                </xpath>
-            </field>
-        </record>
 
         <record id="base_vat_view_partner_form" model="ir.ui.view">
             <field name="name">res.partner.vat.inherit</field>
@@ -30,5 +13,21 @@
                 </field>
             </field>
         </record>
+        
+        <record model="ir.ui.view" id="res_partner_view_form">
+            <field name="name">res.partner.view.form</field>
+            <field name="model">res.partner</field>
+            <field name='inherit_id' ref='base.view_partner_form'/>
+            <field name='arch' type='xml'>
+                <xpath expr="//div[@class='o_row']" position="before">
+                    <label for="vat" string="RUC" class="oe_edit_only" />
+                    <h2>
+                        <field name="vat" placeholder="e.g. PY44444401-7" />
+                    </h2>
+                </xpath>
+            </field>
+        </record>
+
+        
     </data>
 </odoo>

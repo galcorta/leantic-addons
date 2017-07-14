@@ -34,7 +34,6 @@ Paraguayan vat localization customizations
     'author': 'LeanTic',
     'website': 'http://www.leantic.com',
     'depends': [
-        'base',
         'base_vat',
     ],
     'data': [

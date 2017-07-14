@@ -32,7 +32,7 @@ Plan contable paraguayo e impuestos de acuerdo a disposiciones vigentes
     'author': ['Leantic S.A.'],
     'website': 'http://leantic.com',
     'category': 'Localization',
-    'depends': ['base', 'account'],
+    'depends': ['account'],
     'data':[
         'data/l10n_py_chart_data.xml',
         'data/account_tax_data.xml',
